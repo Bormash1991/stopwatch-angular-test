@@ -1,0 +1,30 @@
+.timer {
+  padding: 40px 0;
+  &__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    margin: 0 auto;
+  }
+  &__btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:not([disabled]) {
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.382);
+      }
+    }
+    &-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+}
